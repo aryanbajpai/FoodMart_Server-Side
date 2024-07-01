@@ -34,6 +34,10 @@ const createReciepeSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    price: {
+        type: Number,
+        required: true,
+    },
 });
 
 const createrecipeModel = mongoose.model('createReciepe', createReciepeSchema);
